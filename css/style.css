@@ -809,8 +809,8 @@ margin-bottom: 72px;
 .customers-item-mobile-container{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
+  justify-content: space-between;
+  
   margin-bottom: 72px;
 }
 
