@@ -105,7 +105,7 @@ img {
   }
 
   .mobile-menu-open-btn-container {
-    fill: #2e2f42;
+    stroke: #2e2f42;
   }
 
   .mobile-menu {
@@ -204,7 +204,7 @@ img {
 
   .mobile-menu-contact-link-decoration {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -213,8 +213,7 @@ img {
 
   .mobile-menu-social-link-container {
     display: flex;
-    gap: 56px;
-  
+    justify-content: space-between;
   }
 
   .nav-list {
@@ -225,7 +224,14 @@ img {
     display: none;
   }
 }
-
+@media screen and (min-width:428px){
+  .mobile-menu-contact-link-decoration {  
+    font-size: 36px;
+  }
+  .mobile-menu-social-link-container {
+    gap:56px
+  }
+}
 .logo {
   font-family: 'Raleway';
   font-style: normal;
