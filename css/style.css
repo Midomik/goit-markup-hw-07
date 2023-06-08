@@ -156,6 +156,8 @@ img {
     fill: #2e2f42;
   }
 
+  
+
   .mobile-menu-nav-item {
     margin-bottom: 40px;
   }
@@ -288,7 +290,7 @@ img {
 
     position: absolute;
     left: 0;
-    bottom:-5px;
+    bottom:-1px;
     display: block;
     width: 100%;
     height: 4px;
@@ -296,7 +298,7 @@ img {
     border-radius: 2px;
   }
   .nav-link-container {
-    padding: 20px 0;
+    padding: 24px 0;
   }
 
   .top-contacts {
@@ -341,9 +343,9 @@ img {
 
   .contact-list{
     display: block;
-  
-    
   }
+
+  
 
 }
 
@@ -583,6 +585,12 @@ img {
 .order-btn:focus {
   background-color: #404bbf;
 }
+
+@media screen and (max-width:767px) {
+  .main-header{
+    max-width: 320px;
+  }
+  }
 
 /* tablet */
 @media (min-device-pixel-ratio: 1) and (min-width: 768px),
@@ -1398,9 +1406,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 268px;
+  
   margin-top: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-social-link-container {
@@ -1478,12 +1485,22 @@ img {
   fill: #ffffff;
 }
 
-@media screen and (max-width:7px) {
-  
+@media screen and (min-width:428px) and (max-width:767px) {
+  .footer-text{
+    width: 268px;
+  }
 }
 
+@media screen and (min-width:768px) and (max-width:1157px) {
+  .subscribe-container{
+  margin-top:72px;
+  }
+  }
 
 @media screen and (max-width: 767px){
+  .logo-slogan-container {
+    margin:0;
+  }
   .footer-text{
     text-align: left;
   }
@@ -1535,7 +1552,7 @@ img {
     text-align: left;
   }
 
-  .social-link-container {
+  .footer-social-link-container {
     justify-content: flex-start;
     gap: 16px;
   }
