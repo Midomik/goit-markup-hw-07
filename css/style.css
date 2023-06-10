@@ -54,11 +54,18 @@ img {
   padding-right: 15px;
 }
 
+
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .container {
     padding-right: 16px;
     padding-left: 16px;
   }
@@ -75,6 +82,8 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -528,7 +537,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-page-header/hero-image.png);
+    url(..//images/background-page-header/hero-image.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -544,7 +553,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-page-header/hero-image@2x.png);
+      url(..//images/background-page-header/hero-image@2x.jpg);
   }
 }
 
@@ -556,7 +565,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-page-header/hero-image@3x.png);
+      url(../images/background-page-header/hero-image@3x.jpg);
   }
 }
 
@@ -612,7 +621,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-page-header/hero-image.png);
+      url(../images/background-page-header/tablet/dark-bg.jpg);
   }
 }
 
@@ -676,9 +685,9 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (max-width: 1158px),
-  (min-resolution: 192dpi) and (max-width: 1158px),
-  (min-resolution: 2dppx) and (max-width: 1158px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  (min-resolution: 192dpi) and (min-width: 1158px),
+  (min-resolution: 2dppx) and (min-width: 1158px) {
   .main-haeder-block {
     padding: 188px 0;
     background-image: linear-gradient(
@@ -1511,6 +1520,15 @@ img {
 .icon-send {
   margin-left: 16px;
   fill: #ffffff;
+}
+
+.social-link-container-size {
+  gap: 16px;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: #31d0aa;
 }
 
 @media screen and (min-width:428px) and (max-width:767px) {
